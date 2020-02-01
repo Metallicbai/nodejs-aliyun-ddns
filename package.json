@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-aliyun-ddns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "get": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metallicbai/nodejs-aliyun-ddns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Metallicbai/nodejs-aliyun-ddns/issues"
+  },
+  "homepage": "https://github.com/Metallicbai/nodejs-aliyun-ddns#readme",
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.9",
+    "axios": "^0.19.1"
+  }
+}

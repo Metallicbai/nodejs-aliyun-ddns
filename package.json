@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Metallicbai/nodejs-aliyun-ddns#readme",
   "dependencies": {
     "@alicloud/pop-core": "^1.7.9",
-    "axios": "^0.19.1"
+    "axios": "^0.21.1"
   }
 }

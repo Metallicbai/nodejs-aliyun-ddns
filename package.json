@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Metallicbai/nodejs-aliyun-ddns#readme",
   "dependencies": {
-    "@alicloud/pop-core": "^1.7.9",
-    "axios": "^0.19.1"
+    "@alicloud/alidns20150109": "^2.0.1",
+    "@alicloud/openapi-client": "^0.4.0",
+    "axios": "^0.24.0",
+    "minimist": "^1.2.5"
   }
 }

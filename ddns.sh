@@ -1,5 +1,8 @@
 #!/bin/ev bash
-cd `pwd`;
+SCRIPT_DIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+echo '执行位置：' $SCRIPT_DIR;
+cd $SCRIPT_DIR;
+
 _DEFAULT_ACCOUNT_CONF_PATH="./acount.conf";
 
 if [ -f "$_DEFAULT_ACCOUNT_CONF_PATH" ]; then

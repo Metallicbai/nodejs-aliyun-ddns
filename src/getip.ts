@@ -2,12 +2,18 @@ import axios from 'axios';
 
 async function getUserIP() {
   try {
-    const { data, status } = await axios.get('https://pv.sohu.com/cityjson?ie=utf-8');
+    const { data, status } = await axios.get('http://myip.ipip.net');
     if (status === 200) {
-      let ipJson = data.replace(/(var)|[;=\n\s\t]|(returnCitySN)/g, '');
-      ipJson = JSON.parse(ipJson);
-      console.log(ipJson.cip);
-      return ipJson.cip;
+      let iptext = data.replace(/(var)|[;=\n\s\t]|(returnCitySN)/g, '');
+      try {
+        iptext = iptext.match(/((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}/)[0];
+        
+      } catch (error) {
+        
+      }
+      // ipJson = JSON.parse(ipJson);
+      console.log(iptext);
+      return iptext;
     }
   } catch (error) {
   }

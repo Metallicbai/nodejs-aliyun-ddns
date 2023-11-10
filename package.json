@@ -21,7 +21,7 @@
   "dependencies": {
     "@alicloud/alidns20150109": "^2.0.1",
     "@alicloud/openapi-client": "^0.4.0",
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "minimist": "^1.2.5"
   }
 }
